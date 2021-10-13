@@ -8,7 +8,6 @@ import java.security.MessageDigest;
  * UpdateMessageDigestInputStream
  *
  * @author guoweifeng
- * @date 2021/8/24 15:17
  */
 abstract class UpdateMessageDigestInputStream extends InputStream {
     UpdateMessageDigestInputStream() {

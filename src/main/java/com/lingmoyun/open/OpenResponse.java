@@ -8,7 +8,6 @@ import lombok.Data;
  * OpenWrapperResponse
  *
  * @author guoweifeng
- * @date 2021/8/24 16:41
  */
 @Data
 public class OpenResponse<T> {

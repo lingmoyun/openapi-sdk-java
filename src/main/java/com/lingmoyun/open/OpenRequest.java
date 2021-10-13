@@ -9,7 +9,6 @@ import java.io.IOException;
  * OpenRequest
  *
  * @author guoweifeng
- * @date 2021/8/24 16:41
  */
 public abstract class OpenRequest<Res extends OpenResponse<?>> {
 

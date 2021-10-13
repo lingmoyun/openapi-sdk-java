@@ -1,17 +1,13 @@
 package com.lingmoyun.open;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.TypeReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 /**
  * OpenRequest
  *
  * @author guoweifeng
- * @date 2021/8/24 16:41
  */
 @Data
 @AllArgsConstructor

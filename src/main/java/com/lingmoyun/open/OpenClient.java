@@ -12,7 +12,6 @@ import java.nio.charset.StandardCharsets;
  * 开放平台客户端
  *
  * @author guoweifeng
- * @date 2021/8/24 16:09
  */
 public class OpenClient {
 

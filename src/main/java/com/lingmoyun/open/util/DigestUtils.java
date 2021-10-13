@@ -9,7 +9,6 @@ import java.security.NoSuchAlgorithmException;
  * DigestUtils
  *
  * @author guoweifeng
- * @date 2021/8/24 15:16
  */
 public abstract class DigestUtils {
     private static final String MD5_ALGORITHM_NAME = "MD5";

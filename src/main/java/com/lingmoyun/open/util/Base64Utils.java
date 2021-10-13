@@ -8,9 +8,8 @@ import java.util.Base64;
  * Base64Utils
  *
  * @author guoweifeng
- * @date 2021/8/24 16:27
  */
-public class Base64Utils  {
+public class Base64Utils {
     private static final Charset DEFAULT_CHARSET;
 
     public Base64Utils() {

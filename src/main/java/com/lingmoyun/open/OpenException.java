@@ -4,7 +4,6 @@ package com.lingmoyun.open;
  * 异常.
  *
  * @author gwf@sjychina.com
- * @date 2019/9/9 12:28
  */
 public class OpenException extends Exception {
 

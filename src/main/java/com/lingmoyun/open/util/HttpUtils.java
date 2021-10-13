@@ -12,7 +12,7 @@ public class HttpUtils {
      * 向指定URL发送GET方法的请求
      *
      * @param url   发送请求的URL
-     * @param param 请求参数，请求参数应该是 name1=value1&name2=value2 的形式。
+     * @param param 请求参数
      * @return URL 所代表远程资源的响应结果
      * GET不需要outputStr，直接在url后面加需要携带的参数
      */
@@ -45,6 +45,7 @@ public class HttpUtils {
      * @param url  发送请求的 URL
      * @param body 请求体
      * @return 所代表远程资源的响应结果
+     * @throws IOException 异常
      */
     public static String post(String url, String body) throws IOException {
         OutputStreamWriter out = null;

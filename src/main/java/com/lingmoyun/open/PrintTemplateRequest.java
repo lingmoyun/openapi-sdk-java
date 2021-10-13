@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -14,7 +13,6 @@ import java.util.Map;
  * OpenRequest
  *
  * @author guoweifeng
- * @date 2021/8/24 16:41
  */
 @Data
 @NoArgsConstructor

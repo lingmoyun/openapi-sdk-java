@@ -3,13 +3,11 @@ package com.lingmoyun.open.test;
 import com.lingmoyun.open.*;
 
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Test
  *
  * @author guoweifeng
- * @date 2021/8/24 14:48
  */
 public class Test {
     private static String deviceOpenid = "fef74f6d94614571890c7d9d54c1f2c2";

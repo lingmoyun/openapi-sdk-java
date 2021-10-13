@@ -12,7 +12,6 @@ import java.util.List;
  * OpenRequest
  *
  * @author guoweifeng
- * @date 2021/8/24 16:41
  */
 @Data
 @NoArgsConstructor

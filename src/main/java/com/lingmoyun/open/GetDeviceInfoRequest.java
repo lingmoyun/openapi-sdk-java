@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
  * OpenRequest
  *
  * @author guoweifeng
- * @date 2021/8/24 16:41
  */
 @Data
 @NoArgsConstructor
