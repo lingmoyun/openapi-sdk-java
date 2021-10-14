@@ -24,3 +24,12 @@
     <version>0.0.1</version>
 </dependency>
 ```
+
+## 演示 Demo
+
+为了演示如何使用，openapi-sdk-java 项目`src/test`下提供了演示用的 example 。
+
+
+[Example](https://github.com/lingmoyun/openapi-sdk-java/blob/main/src/test/java/com/lingmoyun/open/test/Test.java)
+
+
