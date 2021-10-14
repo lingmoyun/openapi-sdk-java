@@ -10,18 +10,14 @@ import java.util.Arrays;
  * @author guoweifeng
  */
 public class Test {
-    private static String deviceOpenid = "fef74f6d94614571890c7d9d54c1f2c2";
+    private static String deviceOpenid = "your device openid";
     private static String cpclBase64 = "ISAwIDIwMyAyMDMgMTA0MCAxClBXIDYwOApUQVNLSUQgV2luZm9yZDAwMQpURVhUIDIyMiAwIDAgMiDE47rDMTIzYWJjClRFWFQgMjIyIDIgMCA0NyDE47rDMTIzYWJjClRFWFQgMjIyIDMgMCA4NyDE47rDMTIzYWJjClRFWFQgMjIyIDQgMCAxMzkgxOO6wzEyM2FiYwpURVhUIDIyMiA1IDAgMjE1IMTjusMxMjNhYmMKVEVYVCAyMjIgNiAwIDI5NSDE47rDMTIzYWJjCkxJTkUgMzAwIDEwMCAzMDAgMzAwIDEKTElORSAzMDAgMTAwIDUwMCAxMDAgMgpMSU5FIDMwMCAxMDAgNTAwIDMwMCAzCgpCQVJDT0RFIDEyOCAxIDEgMTAwIDEwMCA0MDAgQTQzMDA5MjAwMDA1ClRFWFQgMCAwIDE2MCA1MTAgQTQzMDA5MjAwMDA1CkJBUkNPREUgUVIgMTAwIDU4MCBNIDIgVSA2Ck1BLGh0dHBzOi8vd3d3Lmdvb2dsZS5jb20KRU5EUVIKQkFSQ09ERSBRUiAzMDAgNTgwIE0gMiBVIDYKUUEsaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbQpFTkRRUgpGT1JNClBSSU5UCg==";
 
 
     public static void main(String[] args) throws OpenException {
-        String domain = "https://openapi.lingmoyun.cn";
-        //String appKey = "a2jqc8qXdGaNOhfT";
-        //String appSecret = "ca73e81887424d1394603c631918b591";
-        String appKey = "8UWO7pjYKdZpjZZZ";
-        String appSecret = "4833af62990e4b80ae1cfe94d6059896";
+        String appKey = "your app key";
+        String appSecret = "your app secret";
         OpenClient client = new OpenClient(appKey, appSecret);
-        client.setDomain(domain);
 
         // 获取品牌型号列表
         testGetBrandModel(client);
@@ -85,10 +81,8 @@ public class Test {
         AddDeviceRequest addDeviceRequest = new AddDeviceRequest();
         addDeviceRequest.setBrandCode("PrintMan");
         addDeviceRequest.setDeviceModel("DLK-200Y");
-        //addDeviceRequest.setDeviceSn("W31607210037");
-        //addDeviceRequest.setDeviceKey("960903");
-        addDeviceRequest.setDeviceSn("W31308210005");
-        addDeviceRequest.setDeviceKey("178880");
+        addDeviceRequest.setDeviceSn("");// TODO: 修改为真实SN
+        addDeviceRequest.setDeviceKey("");// TODO: 修改为真实设备key
         AddDeviceResponse addDeviceResponse = addDeviceRequest.request(client);
         deviceOpenid = addDeviceResponse.getData().getDeviceOpenid();
         //AddDeviceResponse addDeviceResponse = addDeviceRequest.request(client, "PrintMan", "DLK-200Y", "W31607210037", "2083200");
@@ -121,7 +115,7 @@ public class Test {
     public static void testPrintTemplate(OpenClient client) throws OpenException {
         PrintTemplateRequest request = new PrintTemplateRequest();
         request.setDeviceOpenid(deviceOpenid);
-        request.setTemplateId(91L);
+        request.setTemplateId(91L);// TODO: 修改为真实模板ID
         PrintTemplateResponse response = request.request(client);
         //System.out.println(response);
     }
@@ -156,8 +150,7 @@ public class Test {
     public static void testQueryPrintResult(OpenClient client) throws OpenException {
         QueryPrintResultRequest request = new QueryPrintResultRequest();
         request.setDeviceOpenid(deviceOpenid);
-        //request.setTaskId("ST880484917316190209");
-        request.setTaskId("ST884478156404424705");
+        request.setTaskId("");// TODO: 修改为真实taskId
         QueryPrintResultResponse response = request.request(client);
         //System.out.println(response);
     }
