@@ -10,7 +10,7 @@
 
     <name>openapi-sdk-java</name>
     <url>https://github.com/lingmoyun/openapi-sdk-java</url>
-    <description>openapi-sdk-java for lingmoyun</description>
+    <description>The Java SDK For Lingmoyun Openapi.</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
